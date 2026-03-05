@@ -1,6 +1,6 @@
 const CONFIG = {
   imagePath: "photo.jpg", 
-  revealText: "Ai reușit să refaci puzzle-ul, dar adevărul e că tu ai fost piesa care mi-a completat viața. Cu tine, totul pare mai simplu, mai frumos și mai real. Pentru mine ești mai mult decât o persoană specială. Ești locul în care vreau să mă întorc mereu.💙",
+  revealText: "Ai reușit să refaci puzzle-ul, dar adevărul e că tu ai fost piesa care mi-a completat viața. Cu tine, totul pare mai simplu, mai frumos și mai real. Te iubesc enorm și sunt recunoscător că te am în viața mea. Ești cea mai prețioasă comoară a mea, iar fiecare zi alături de tine e un dar neprețuit. Mulțumesc că ești tu și că mă iubești așa cum sunt. Te iubesc din tot sufletul meu!",
   boardPx: 420,          
   shuffleSwaps: 300      
 };
