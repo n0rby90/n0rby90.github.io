@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Puzzle Surprise</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <header class="top">
+      <div class="badge">🧩</div>
+      <div>
+        <h1>Puzzle Surprise</h1>
+        <p class="sub">Refă poza ca să deblochezi surpriza.</p>
+      </div>
+    </header>
+
+    <section class="card">
+      <div class="bar">
+        <div class="left">
+          <div class="meta">
+            <div class="metaTitle">Dificultate</div>
+            <div class="metaValue" id="diffLabel">3x3</div>
+          </div>
+          <div class="meta">
+            <div class="metaTitle">Mutări</div>
+            <div class="metaValue" id="moves">0</div>
+          </div>
+          <div class="meta">
+            <div class="metaTitle">Timp</div>
+            <div class="metaValue" id="time">00:00</div>
+          </div>
+        </div>
+
+        <div class="right">
+          <select id="size">
+            <option value="3" selected>3x3</option>
+            <option value="4">4x4</option>
+            <option value="5">5x5</option>
+          </select>
+          <button class="btn ghost" id="btnShuffle" type="button">Amestecă</button>
+          <button class="btn" id="btnReset" type="button">Reset</button>
+        </div>
+      </div>
+
+      <div class="boardWrap">
+        <canvas id="board" width="420" height="420" aria-label="Puzzle"></canvas>
+      </div>
+
+      <p class="hint" id="hint">
+        Click pe o piesă, apoi pe alta, ca să le schimbi între ele.
+      </p>
+
+      <p class="msg" id="msg"></p>
+    </section>
+
+    <section class="card reveal hidden" id="reveal">
+      <div class="big">✅</div>
+      <h2>Deblocat</h2>
+      <h1 class="revealTitle" id="revealTitle">Felicitări!
+      </h1>
+      <p class="revealText" id="revealText">Ai reușit să refaci puzzle-ul, dar adevărul e că tu ai fost piesa care mi-a completat viața. Cu tine, totul pare mai simplu, mai frumos și mai real. Și dacă ar exista încă o mie de puzzle-uri de rezolvat, tot aș alege să le fac alături de tine.</p>
+      <button class="btn ghost" id="btnAgain" type="button">Joacă din nou</button>
+    </section>
+
+    <footer class="foot">Made by you, pentru ea.</footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
